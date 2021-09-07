@@ -1,0 +1,106 @@
+body {
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+img {
+    outline: 5px dashed pink;
+}
+.text_block{
+    width: 100%;
+    height: 250px;
+    text-indent: 50px;
+    word-spacing: 10px;
+    letter-spacing:2px;
+    word-break:break-all;
+    direction: rtl;
+    overflow:scroll;
+    line-height: 0.9;
+}
+
+.text_block::first-line {
+    background-color: red;    
+}
+
+.text_block::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+}
+
+ul {
+    list-style: square outside;
+}
+
+li::before {
+     content: "\272A";
+     color: red;
+}
+
+li::after {
+    content: "\273f";
+    color:blueviolet;
+}
+
+li:first-child {
+    background-color: khaki;
+}
+
+li:nth-child(8) {
+    font-style: italic ;
+}
+
+li:nth-child(2n){
+    font-weight: bolder;
+}
+
+a:visited {
+    color: coral;
+}
+
+a:link {
+    color: yellow
+}
+
+a:hover {
+    color:greenyellow;
+}
+
+.block_1 {
+    width: 200px;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.block_2 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: background-color 2s ease;
+}
+
+.block_2:hover {
+    background-color: aqua;
+}
+
+.block_hidden {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    visibility: hidden;
+}
+
+.picture_block {
+    display: block;
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    cursor: none;
+}
