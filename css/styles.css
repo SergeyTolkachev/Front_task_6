@@ -34,10 +34,6 @@ img {
     color: blue;
 }
 
-ul {
-    list-style: square outside;
-}
-
 li::before {
      content: "\272A";
      color: red;
